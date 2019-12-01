@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+    </style>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+        <!-- Playlist button -->
+    <div class="container player">
+        <div class="nav-bar">
+            <div class="menu-hamburger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14"><g transform="translate(0 -76.5)"><g transform="translate(0 76.5)"><path d="M0,90.5H21V88.167H0Zm0-5.833H21V82.333H0ZM0,76.5v2.333H21V76.5Z" transform="translate(0 -76.5)" fill="#21bcce"/></g></g></svg>
+            </div>
+        </div>
+        <!-- Content part -->
+        <div class="content">
+            <div class="timer">
+                <div class="timer">00:00</div>
+                <!-- <p><span class="js-timer">00:00</span> | 04:23 </p> -->
+            </div>
+            <div class="timer-circle">
+                <div class="image-artist">
+                <img class="js-images" src="images/artist-1.png" alt="">
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="258" height="258" viewBox="0 0 258 258">
+                <g fill="none" stroke="#515151" stroke-width="3">
+                        <circle cx="129" cy="129" r="129" stroke="none"/>
+                        <circle cx="129" cy="129" r="127.5" fill="none"/>
+                </g>
+                </svg>
+                <svg  xmlns="http://www.w3.org/2000/svg" width="258" height="258" viewBox="0 0 258 258">
+                        <g fill="none" stroke="#21bcce" stroke-width="3">
+                                <path class="time-line" d="M 129, 129
+                                m -127.5, 0
+                                a 127.5,127.5 0 1,0 255,0
+                                a 127.5,127.5 0 1,0 -255,0"
+                                />
+                        </g>
+                </svg>
+            </div>
+            <div class="song-content">
+                <div class="song-informations">
+                        <p class="song-title js-song-title">Territory</p>
+                        <p class="artist-name js-artist-name">The Blaze</p>
+                </div>
+             </div>
+        </div>
+        <!-- Bottom part 
+        Control part -->
+        <div class="bottom-part">
+                <div class="control-bar">
+                <div class="equalizer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 25 20"><g transform="translate(-42 -669)"><path d="M0,19.861H25V14.853H0ZM0,2.333V7.341H25V2.333Z" transform="translate(42 668)" fill="#515151"/><circle cx="4" cy="4" r="4" transform="translate(47 669)" fill="#21bcce"/>
+                                <circle cx="4" cy="4" r="4" transform="translate(56 681)" fill="#21bcce"/></g></svg>
+                </div>
+                <div class="button-backward js-button-backward">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24.629" height="25.654" viewBox="0 0 24.629 25.654"><path d="M0,25.654,19.622,13.047v8.29h5.007V3.608H19.622v9L0,0Z" transform="translate(24.629 25.654) rotate(180)" fill="#21bcce"/></svg>
+                </div>
+                <div class="pause-play">
+                        <div class="circle-animation">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><g transform="translate(-156 -647)"><g transform="translate(156 647)" fill="none" stroke="#21bcce" stroke-width="1"><circle cx="32" cy="32" r="32" stroke="none"/><circle cx="32" cy="32" r="31.5" fill="none"/></g><g transform="translate(152.009 666.26)"><g transform="translate(25.5)"><path d="M25.5,24.64h7.04V0H25.5ZM39.58,0V24.64h7.04V0Z" transform="translate(-25.5)" fill="#21bcce"/></g></g></g></svg>
+
+                        </div>
+                        <div class="dispNone button-pause js-pause ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><g transform="translate(-156 -647)"><g transform="translate(156 647)" fill="none" stroke="#21bcce" stroke-width="1"><circle cx="32" cy="32" r="32" stroke="none"/><circle cx="32" cy="32" r="31.5" fill="none"/></g><g transform="translate(152.009 666.26)"><g transform="translate(25.5)"><path d="M25.5,24.64h7.04V0H25.5ZM39.58,0V24.64h7.04V0Z" transform="translate(-25.5)" fill="#21bcce"/></g></g></g></svg>
+                        </div>
+                        <div class="button-play js-play ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><g transform="translate(-156 -647)"><g transform="translate(156 647)" fill="none" stroke="#21bcce" stroke-width="1"><circle cx="32" cy="32" r="32" stroke="none"/><circle cx="32" cy="32" r="31.5" fill="none"/></g><g transform="translate(128.524 662.492)"><g transform="translate(50.273)"><path d="M50.273,0V33.631L76.749,16.815Z" transform="translate(-50.273)" fill="#21bcce"/></g></g></g></svg>            
+                        </div>
+                </div>
+                <div class="button-forward js-button-forward" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24.629" height="25.654" viewBox="0 0 24.629 25.654"><path d="M0,0,19.622,12.607V4.317h5.007V22.046H19.622v-9L0,25.655Z" fill="#21bcce"/></svg>
+                </div>
+                <div class="button-ramdom">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="17.708" viewBox="0 0 25 17.708"><path d="M30.091,25.722a1.042,1.042,0,0,0-1.473,1.473l.826.826H26.669a3.111,3.111,0,0,1-2.441-1.173l-2.395-2.994,2.395-2.994a3.111,3.111,0,0,1,2.441-1.173h2.774l-.826.826a1.042,1.042,0,1,0,1.473,1.473l2.6-2.6a1.041,1.041,0,0,0,0-1.473l-2.6-2.6a1.042,1.042,0,1,0-1.473,1.473l.826.826H26.669A5.184,5.184,0,0,0,22.6,19.559l-2.1,2.628-2.1-2.628A5.184,5.184,0,0,0,14.331,17.6H9.042a1.042,1.042,0,0,0,0,2.083h5.289a3.111,3.111,0,0,1,2.441,1.173l2.395,2.994-2.395,2.994a3.111,3.111,0,0,1-2.441,1.173H9.042a1.042,1.042,0,0,0,0,2.083h5.289A5.184,5.184,0,0,0,18.4,28.15l2.1-2.628,2.1,2.628A5.184,5.184,0,0,0,26.669,30.1h2.774l-.826.826A1.042,1.042,0,1,0,30.091,32.4l2.6-2.6a1.041,1.041,0,0,0,0-1.473Z" transform="translate(-8 -15)" fill="#21bcce"/></svg>
+                </div>
+                </div>
+                <!-- Volume part -->
+                <div class="volume">
+                <!-- Volume icon -->
+                <div class="volume-icon">
+                        <svg class="js-unmute" xmlns="http://www.w3.org/2000/svg" width="15.038" height="11.946" viewBox="0 0 15.038 11.946"><g transform="translate(0 -9.565)"><path d="M7.524,20.225a.683.683,0,0,1-1.119.526L2.671,17.657H.683A.683.683,0,0,1,0,16.975V14.254a.683.683,0,0,1,.683-.683H2.671L6.4,10.477A.683.683,0,0,1,7.524,11v9.222Zm2.624-1.067-.049,0a.682.682,0,0,1-.483-.2l-.091-.092a.682.682,0,0,1-.066-.89,3.971,3.971,0,0,0-.105-4.866A.682.682,0,0,1,9.4,12.2l.091-.091a.668.668,0,0,1,.517-.2.684.684,0,0,1,.495.25,5.469,5.469,0,0,1,.142,6.727A.683.683,0,0,1,10.148,19.158Zm2.823,2.11a.684.684,0,0,1-.493.242h-.029a.682.682,0,0,1-.483-.2l-.09-.09a.683.683,0,0,1-.04-.922,7.278,7.278,0,0,0-.121-9.509.683.683,0,0,1,.027-.935l.09-.09a.665.665,0,0,1,.5-.2.683.683,0,0,1,.491.229,8.768,8.768,0,0,1,.144,11.475Z" fill="#21bcce"/></g></svg>
+                        <svg class="dispNone js-mute"xmlns="http://www.w3.org/2000/svg" width="15.038" height="11.946" viewBox="0 0 15.038 11.946"><g transform="translate(-11 -765.982)"><path d="M7.524,20.225a.683.683,0,0,1-1.119.526L2.671,17.657H.683A.683.683,0,0,1,0,16.975V14.254a.683.683,0,0,1,.683-.683H2.671L6.4,10.477A.683.683,0,0,1,7.524,11v9.222Zm2.624-1.067-.049,0a.682.682,0,0,1-.483-.2l-.091-.092a.682.682,0,0,1-.066-.89,3.971,3.971,0,0,0-.105-4.866A.682.682,0,0,1,9.4,12.2l.091-.091a.668.668,0,0,1,.517-.2.684.684,0,0,1,.495.25,5.469,5.469,0,0,1,.142,6.727A.683.683,0,0,1,10.148,19.158Zm2.823,2.11a.684.684,0,0,1-.493.242h-.029a.682.682,0,0,1-.483-.2l-.09-.09a.683.683,0,0,1-.04-.922,7.278,7.278,0,0,0-.121-9.509.683.683,0,0,1,.027-.935l.09-.09a.665.665,0,0,1,.5-.2.683.683,0,0,1,.491.229,8.768,8.768,0,0,1,.144,11.475Z" transform="translate(11 756.417)" fill="#21bcce"/><line y1="10" x2="13" transform="translate(12.5 766.5)" fill="none" stroke="#21bcce" stroke-width="1"/></g></svg>
+                </div>
+                <!-- Volume bar -->
+                <div class="volume-bar js-volume-bar">
+                        <div class="empty-bar"></div>
+                        <div class="full-bar js-volume-bar-fill"></div> 
+                        <div class="volume-line volume-bar-circle">
+                        </div>
+                </div>
+                </div>
+        </div>
+<script src="script/script.js"></script>
+</body>    

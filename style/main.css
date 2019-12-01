@@ -1,0 +1,229 @@
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.dispNone{
+    display: none;
+}
+
+.container
+{
+    width: 100vw;
+    height: 100vh;
+    background:#0F0E0E;
+    color: white;
+    box-sizing: border-box;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Top part  */
+.nav-bar
+{
+    width: 80vw;
+}
+
+/* Content part */
+.time-line
+{
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+    stroke-miterlimit: 100;
+    transform-origin: center;
+    transform: rotate(90deg) rotateX(180deg);
+}
+
+.image-artist
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.image-artist img
+{
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+    transform: scale(0.9);
+
+}
+
+.timer-circle
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 70vw; 
+    height: 70vw;
+}
+
+.content
+{
+    display: flex;
+    width: 90vw;
+    height: 70vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer-circle svg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70vw;
+    height: 100%;
+}
+.song-informations
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 9vh;
+}
+.timer
+{
+    margin-bottom: 10px;
+}
+
+.song-content p
+{
+    margin: 0;
+}
+
+.song-title
+{
+    font-size: 2em;
+    height: 5vh;
+    margin-top: 1vh;
+}
+
+.artist-name
+{
+    font-size: 1em;
+    opacity: 0.7;
+
+}
+
+/* Bottom part 
+Control bar part */
+.bottom-part
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 8vh;
+}
+
+.control-bar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80vw;
+    height:8vh;
+}
+
+.pause-play
+{
+    position: relative;
+    width: 55px;
+    height: 55px;
+    left: 0;
+    top: -2vh;
+}
+
+.pause-play svg
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.circle-animation
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #21bcce;
+    opacity: 0;
+    border-radius: 100%;
+}
+
+.circle-animation::after
+{
+    animation: circlePlayPauseAnimation 0.6s;
+}
+
+@keyframes circlePlayPauseAnimation
+{
+    from    { opacity: 1; }
+    to  {opacity: 0;}
+}
+
+/* .pause-play .button-play
+{
+    opacity: 0; 
+} */
+
+
+/* Icon part */
+.volume-icon
+{
+    width: 5vw;
+    margin: 0;
+    position: relative;
+}
+
+
+/* Volume part */
+.volume
+{
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+.volume-bar
+{
+    position: relative;
+    width: 75vw;
+    height: 1vh;
+    margin-left:2vw;
+}
+
+.volume-bar .empty-bar,.full-bar
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.empty-bar
+{
+    background: #515151;
+}
+
+.full-bar
+{
+    background: #21BCCE;
+}
